@@ -54,7 +54,8 @@
               </div>
                <div class="input-field col s6">
                 <label for="contraseña">Ingresa tu contraseña</label>
-                <input type="password" id="contraseña" class="validate" required>
+                <input type="password" id="contraseña" class="validate" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}">
+                <span class="helper-text" data-error="Debe tener mínimo 16 caracteres, una mayúscula, una minúscula, un número y un símbolo."></span>
               </div>
                <div class="input-field col s6">
                 <label for="contraseña">Confirme su contraseña</label>
